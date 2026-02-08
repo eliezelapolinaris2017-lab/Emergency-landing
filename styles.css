@@ -257,3 +257,19 @@ h2{ margin:0 0 14px; font-size: 26px; letter-spacing: -.3px; }
     height:46px;
   }
 }
+/* ===== Logo más grande sin cambiar layout ===== */
+.logo{
+  width:96px !important;
+  height:96px !important;
+  padding:4px !important;   /* antes 8px — le quitamos marco interno */
+  border-radius:16px;
+}
+
+/* En móvil no tan gigante para no empujar botones */
+@media (max-width: 920px){
+  .logo{
+    width:72px !important;
+    height:72px !important;
+    padding:3px !important;
+  }
+}
