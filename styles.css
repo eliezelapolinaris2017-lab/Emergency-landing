@@ -273,3 +273,21 @@ h2{ margin:0 0 14px; font-size: 26px; letter-spacing: -.3px; }
     padding:3px !important;
   }
 }
+/* ===== Logo limpio sin borde ni caja ===== */
+.logo{
+  width:96px !important;
+  height:96px !important;
+  padding:0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* tamaño móvil controlado */
+@media (max-width: 920px){
+  .logo{
+    width:72px !important;
+    height:72px !important;
+  }
+}
