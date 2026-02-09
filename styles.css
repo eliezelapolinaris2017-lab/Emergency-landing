@@ -300,3 +300,19 @@ h2{
   .nav-arrow.left{ left: 12px; }
   .nav-arrow.right{ right: 12px; }
 }
+/* ===== Mobile: dots abajo centrados (no encima del texto) ===== */
+@media (max-width: 920px){
+  .side-nav{
+    right: 50%;
+    top: auto;
+    bottom: calc(env(safe-area-inset-bottom) + 74px);
+    transform: translateX(50%);
+    flex-direction: row;
+    gap: 12px;
+  }
+
+  .side-nav .dot{
+    width: 9px;
+    height: 9px;
+  }
+}
