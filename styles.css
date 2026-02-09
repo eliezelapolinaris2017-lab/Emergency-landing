@@ -316,3 +316,35 @@ h2{
     height: 9px;
   }
 }
+
+/* ===== Centralización real de todas las slides ===== */
+
+.slide{
+  display: flex !important;
+  justify-content: center !important;   /* centro horizontal */
+  align-items: center !important;       /* centro vertical */
+  text-align: left;
+}
+
+.slide-inner{
+  width: 100% !important;
+  max-width: 920px !important;          /* ancho armonioso */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+/* ===== Hero (primera pantalla) aún más balanceado ===== */
+#s1 .slide-inner{
+  max-width: 860px !important;
+}
+
+/* ===== Mobile: centro óptico ===== */
+@media (max-width: 920px){
+  .slide-inner{
+    max-width: 680px !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+}
